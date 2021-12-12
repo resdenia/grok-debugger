@@ -1,0 +1,23 @@
+{
+  "name": "grok-debugger",
+  "version": "1.0.0",
+  "description": "Logzio grok debugger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resdenia/grok-debugger.git"
+  },
+  "author": "Anton Kolomiiets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/resdenia/grok-debugger/issues"
+  },
+  "homepage": "https://github.com/resdenia/grok-debugger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "grok-js": "^3.3.1"
+  }
+}
