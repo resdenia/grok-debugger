@@ -1,0 +1,10 @@
+/dist-dev
+node_modules
+dev.ts
+
+file_*
+file.log
+.env
+/pipeline-example.json
+new.json
+pipeline-example.json

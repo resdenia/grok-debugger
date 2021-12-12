@@ -1,1 +1,7 @@
-/node_modules
+/dist-dev
+node_modules
+dev.ts
+
+file_*
+file.log
+.env

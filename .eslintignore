@@ -1,0 +1,5 @@
+/static/dist
+**/*.min.js
+/node_modules 
+/typings
+/src/**/__test__/*.test.ts
