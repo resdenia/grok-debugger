@@ -4,7 +4,7 @@ import { Header } from './components/Header';
 import { Button } from './components/Button';
 import { resultContainer } from './components/resultContainer';
 import { textareaField } from './components/textareaField';
-
+import { Footer } from './components/Footer';
 
 
 class GrokDebugger {
