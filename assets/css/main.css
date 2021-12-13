@@ -51,6 +51,7 @@ header {
 	border: 0;
 	background: var(--yellow-color);
 	color: var(--primary);
+	cursor: pointer;
 }
 
 .result-container {
