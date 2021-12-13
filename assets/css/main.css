@@ -63,4 +63,5 @@ header {
 	background: var(--container-color);
 	border-radius: 5px;
 	color: var(--primary-text);
+	overflow: scroll;
 }

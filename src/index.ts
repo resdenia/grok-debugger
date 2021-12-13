@@ -41,7 +41,8 @@ class GrokDebugger {
 				const responseData = await response.json();
 				console.log(responseData)
 				const renderDisplay = document.querySelector('#parsedLogs');
-				renderDisplay.textContent = JSON.stringify(responseData, null, "&nbsp;");
+				const contentWithSpaces = JSON.stringify(responseData, null, "&nbsp;").split('&nbsp;').join('  ');
+				renderDisplay.textContent = contentWithSpaces
 
 			} catch (e) {
 				console.log(e);
