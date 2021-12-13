@@ -1,10 +1,65 @@
 :root {
-	--primary: brown;
-	--secondary: green;
+	--primary: #2a3547;
+	--secondary: #25272c;
+	--primary-text: #f8fafb;
+	--container-color: #323232;
+	--yellow-color: #ffc15c;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+header {
+	background: var(--primary);
+	padding: 1rem;
+}
+
+.main-section {
+	background: var(--secondary);
+
+	width: 100%;
+	padding: 3rem 0px;
+	height: calc(100vh - 79px);
+}
+
+.formGrok {
+	max-width: 680px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.form-field {
+	min-height: 200px;
+	margin-bottom: 20px;
+	background: var(--container-color);
+	border-radius: 5px;
+	border-color: var(--yellow-color);
+	color: var(--primary-text);
+	padding: 5px;
+}
+
+.form-button {
+	max-width: 140px;
+	margin: auto;
+	font-size: 15px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 0;
+	background: var(--yellow-color);
+	color: var(--primary);
+}
+
+.result-container {
+	max-width: 680px;
+	margin: auto;
+	width: 100%;
+	height: 300px;
+	margin-top: 20px;
+	background: var(--container-color);
+	border-radius: 5px;
+	color: var(--primary-text);
 }

@@ -1,11 +1,10 @@
 import '../assets/css/main.css';
 
 import { Header } from './components/Header';
-import { Button } from './components/Button';
 import { resultContainer } from './components/resultContainer';
-import { textareaField } from './components/textareaField';
 import { Footer } from './components/Footer';
-
+import { MainForm } from './components/MainForm';
+import { pageWrapper } from './components/pageWrapper';
 
 class GrokDebugger {
 	root: HTMLDivElement = document.getElementById('root') as HTMLDivElement
@@ -17,10 +16,18 @@ class GrokDebugger {
 
 	initPage = () => {
 		const header = Header();
+		const footer = Footer();
 		const result = resultContainer();
+		const mainForm = MainForm();
+		const mainWrapper = pageWrapper();
+
+		mainWrapper.appendChild(mainForm);
+		mainWrapper.appendChild(result);
+
 
 		this.root.appendChild(header);
-		this.root.appendChild(result)
+		this.root.appendChild(mainWrapper);
+		this.root.appendChild(footer)
 	}
 }
 

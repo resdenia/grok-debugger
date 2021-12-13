@@ -1,8 +1,16 @@
+interface Input {
 
-export const textareaField = (input: string, className: string) => {
+}
 
-	const textareaInput = document.createElement('textarea')
+export const textareaField = (input: string, classNames: string[]) => {
+
+	const textareaInput = document.createElement(input)
 
 
-	return
+	classNames.forEach(className => {
+		textareaInput.classList.add(className)
+	})
+
+
+	return textareaInput
 }
