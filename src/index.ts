@@ -17,10 +17,10 @@ class GrokDebugger {
 
 	initPage = () => {
 		const header = Header();
-
+		const result = resultContainer();
 
 		this.root.appendChild(header);
-
+		this.root.appendChild(result)
 	}
 }
 
