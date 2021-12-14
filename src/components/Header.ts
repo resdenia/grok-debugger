@@ -10,8 +10,14 @@ export const Header = () => {
 
 	const logo = Logo()
 
+
+	const title = document.createElement('h1');
+	title.textContent = 'Grok Debugger';
+	title.classList.add('header_title');
+
 	headerContainer.appendChild(logo)
 
+	headerContainer.appendChild(title)
 	headerContainer.appendChild(navWrapper)
 
 

@@ -1,10 +1,13 @@
 import '../assets/css/main.css';
+import '../assets/css/prism.css';
 
 import { Header } from './components/Header';
 import { resultContainer } from './components/resultContainer';
 import { Footer } from './components/Footer';
 import { MainForm } from './components/MainForm';
 import { pageWrapper } from './components/pageWrapper';
+import 'prismjs';
+import 'prismjs/components/prism-json';
 // import { onSubmit } from './utils/onSubmit';
 
 class GrokDebugger {
@@ -39,10 +42,9 @@ class GrokDebugger {
 					})
 				})
 				const responseData = await response.json();
-				console.log(responseData)
 				const renderDisplay = document.querySelector('#parsedLogs');
 				const contentWithSpaces = JSON.stringify(responseData, null, "&nbsp;").split('&nbsp;').join('  ');
-				renderDisplay.textContent = contentWithSpaces
+				(renderDisplay as HTMLElement).textContent = contentWithSpaces
 
 			} catch (e) {
 				console.log(e);
